@@ -15,6 +15,7 @@ Para participar da avaliação, o candidato deve seguir os passos abaixos:
    1. [#4 Excluir gestor][i4]
 1. O código deve estar commitado no seu fork
 1. Publicar o código no [heroku](https://www.heroku.com/)
+1. **Opcional**: Separação entre frontend e backend é um plus
 
 ## Submissão
 Os candidatos receberão um e-mail com a data limite para submissão. O e-mail deverá ser respondido até a data limite, contendo as seguintes informações:
