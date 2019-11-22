@@ -1,6 +1,7 @@
 # Descrição
 Este é um desafio para candidatos à vaga de estágio de desenvolvedor Java.
-**Restrição:** O candidato deve se formar, **no mínimo**, no início de **2021**. Candidatos com formação **anterior** a essa data não serão avaliados.
+
+**Restrição:** O candidato deve se formar, **no mínimo**, no início de **2021**. Candidatos com formação prevista **anterior** a essa data não serão avaliados.
 
 
 ## Instruções
