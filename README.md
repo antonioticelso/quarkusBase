@@ -1,11 +1,13 @@
-# Descrição
+# Crud-Poupex #
+
+## Descrição ##
 Este é um desafio para candidatos à vaga de estágio de desenvolvedor Java.
 O objetivo deste desafio é coletar informações sobre o familiaridade do candidato com ferramentas e tecnologias presentes no estágio.
 
 **Restrição:** O candidato deve se formar, **no mínimo**, no último semestre de **2020**. Candidatos com formação prevista **anterior** a essa data não serão avaliados.
 
 
-## Instruções
+## Instruções ##
 Para participar da avaliação, o candidato deve seguir os passos abaixos:
 
 1. Criar um fork deste repositório
@@ -18,7 +20,7 @@ Para participar da avaliação, o candidato deve seguir os passos abaixos:
 1. Publicar o código no [heroku](https://www.heroku.com/)
 1. **Opcional**: Separação entre frontend e backend é um plus
 
-## Submissão
+## Submissão ##
 Os candidatos receberão um e-mail com a data limite para submissão. O e-mail deverá ser respondido até a data limite, contendo as seguintes informações:
 * Nome do candidato
 * Ano e semestre previsto para formar
@@ -33,3 +35,7 @@ Os candidatos que demonstrarem aptidão na linguagem Java serão contactados par
 [i3]: https://github.com/maykelsb/crud-gestores/issues/3
 [i4]: https://github.com/maykelsb/crud-gestores/issues/4
 
+## Versão ##
+
+Versão 1.4.2
+Antônio Celso Prado de Magalhâes
