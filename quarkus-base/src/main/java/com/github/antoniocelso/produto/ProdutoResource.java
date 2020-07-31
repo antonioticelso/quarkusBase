@@ -16,6 +16,11 @@ public class ProdutoResource {
         return Produto.listAll();
     }
 
+    @POST
+    public void  buscarProdutos(CadastroProdutoDTO produtoDTO){
+        Produto.listAll();
+    }
+
 }
 
 
