@@ -28,3 +28,15 @@ Or, if you don't have GraalVM installed, you can run the native executable build
 You can then execute your native executable with: `./target/quarkus-base-1.0.0-SNAPSHOT-runner`
 
 If you want to learn more about building native executables, please consult https://quarkus.io/guides/building-native-image.
+
+## Add Extensions ##
+mvn quarkus:add-extension -Dextensions="openapi"
+
+mvn quarkus:add-extension -Dextensions="hibernate-orm-panache"
+
+mvn quarkus:add-extension -Dextensions="jdbc-mysql"
+
+mvn quarkus:add-extension -Dextensions="resteasy-jsonb"
+
+docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste --rm mysql:8.0.19
+
