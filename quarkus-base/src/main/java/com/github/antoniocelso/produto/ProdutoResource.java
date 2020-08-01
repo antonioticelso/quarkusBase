@@ -47,4 +47,20 @@ public class ProdutoResource {
 
     }
 
+    @DELETE
+    @Path("{id}")
+    @Transactional
+    public void deletarProdutos(@PathParam("id") Long id) {
+
+        Optional<Produto> produtoOptional = Produto.findByIdOptional(id);
+
+        if ( produtoOptional.isPresent() ) {
+            produtoOptional.get().delete();
+
+        } else {
+            throw new NotFoundException();
+        }
+
+    }
+
 }

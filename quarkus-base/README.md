@@ -40,3 +40,5 @@ mvn quarkus:add-extension -Dextensions="resteasy-jsonb"
 
 docker run --network host -e MYSQL_ROOT_PASSWORD=root -e MYSQL_DATABASE=teste --rm mysql:8.0.19
 
+mvn quarkus:add-extension -Dextensions="health"
+
