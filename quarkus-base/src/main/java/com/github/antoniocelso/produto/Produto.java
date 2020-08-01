@@ -1,11 +1,13 @@
-package com.github.antoniocelso;
+package com.github.antoniocelso.produto;
 
-// import javax.ws.rs.GET;
-// import javax.ws.rs.Path;
-// import javax.ws.rs.Produces;
-// import javax.ws.rs.core.MediaType;
+import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import org.hibernate.annotations.CreationTimestamp;
+import org.hibernate.annotations.UpdateTimestamp;
 
-//@Path("/hello")
+import javax.persistence.Entity;
+import java.math.BigDecimal;
+import java.util.Date;
+
 @Entity
 public class Produto extends PanacheEntity {
 
@@ -19,11 +21,5 @@ public class Produto extends PanacheEntity {
     @UpdateTimestamp
     public Date dataAtualizacao;
 
-//    @GET
-//    @Produces(MediaType.TEXT_PLAIN)
-//    public String hello() {
-//        return "hello";
-//    }
+
 }
-
-

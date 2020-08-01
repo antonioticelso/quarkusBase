@@ -1,0 +1,65 @@
+Index: quarkus-base/src/main/java/com/github/antoniocelso/produto/Produto.java
+===================================================================
+--- quarkus-base/src/main/java/com/github/antoniocelso/produto/Produto.java	(revision c45ca430cb4515abfcc877e5ebfe50056b71b319)
++++ quarkus-base/src/main/java/com/github/antoniocelso/produto/Produto.java	(revision c45ca430cb4515abfcc877e5ebfe50056b71b319)
+@@ -1,29 +0,0 @@
+-package com.github.antoniocelso;
+-
+-// import javax.ws.rs.GET;
+-// import javax.ws.rs.Path;
+-// import javax.ws.rs.Produces;
+-// import javax.ws.rs.core.MediaType;
+-
+-//@Path("/hello")
+-@Entity
+-public class Produto extends PanacheEntity {
+-
+-    public String nome;
+-
+-    public BigDecimal valor;
+-
+-    @CreationTimestamp
+-    public Date dataCriacao;
+-
+-    @UpdateTimestamp
+-    public Date dataAtualizacao;
+-
+-//    @GET
+-//    @Produces(MediaType.TEXT_PLAIN)
+-//    public String hello() {
+-//        return "hello";
+-//    }
+-}
+-
+-
+Index: quarkus-base/src/main/java/com/github/antoniocelso/produto/ProdutoResource.java
+===================================================================
+--- quarkus-base/src/main/java/com/github/antoniocelso/produto/ProdutoResource.java	(revision c45ca430cb4515abfcc877e5ebfe50056b71b319)
++++ quarkus-base/src/main/java/com/github/antoniocelso/produto/ProdutoResource.java	(revision c45ca430cb4515abfcc877e5ebfe50056b71b319)
+@@ -1,26 +0,0 @@
+-package com.github.antoniocelso;
+-
+-import javax.ws.rs.GET;
+-import javax.ws.rs.Path;
+-import javax.ws.rs.Produces;
+-import javax.ws.rs.core.MediaType;
+-
+-@Path("/hello")
+-@Produces(MediaType.APPLICATION_JSON)
+-@Consumes(MediaType.APPLICATION_JSON)
+-@Entity
+-public class ProdutoResource {
+-
+-    @GET
+-    public List<Produto> buscarProdutos(){
+-        return Produto.listAll();
+-    }
+-
+-    @POST
+-    public void  buscarProdutos(CadastroProdutoDTO produtoDTO){
+-        Produto.listAll();
+-    }
+-
+-}
+-
+-

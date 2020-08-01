@@ -1,26 +1,21 @@
-package com.github.antoniocelso;
+package com.github.antoniocelso.produto;
 
-import javax.ws.rs.GET;
-import javax.ws.rs.Path;
-import javax.ws.rs.Produces;
+import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
+import java.util.List;
 
-@Path("/hello")
+@Path("/v1/produtos")
 @Produces(MediaType.APPLICATION_JSON)
 @Consumes(MediaType.APPLICATION_JSON)
-@Entity
 public class ProdutoResource {
 
     @GET
-    public List<Produto> buscarProdutos(){
+    public List<Produto> listarProdutos() {
         return Produto.listAll();
     }
 
-    @POST
-    public void  buscarProdutos(CadastroProdutoDTO produtoDTO){
-        Produto.listAll();
-    }
-
+//    @POST
+//    public void listarProdutos(Cadas) {
+//        Produto.listAll();
+//    }
 }
-
-
