@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="63da5742-e54a-44cc-a9fc-9d95b5421e1e" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="devTonhao" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1fafM2RabhC4kZP3Ii6aGdCHYBq" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="63da5742-e54a-44cc-a9fc-9d95b5421e1e" name="Default Changelist" comment="" />
+      <created>1596461072820</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1596461072820</updated>
+      <workItem from="1596461074379" duration="269000" />
+      <workItem from="1596561082368" duration="813000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="2254" y="154" width="429" height="763" key="RollbackChangesDialog" timestamp="1596561458886">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2254" y="154" width="429" height="763" key="RollbackChangesDialog/1280.0.1920.1080/0.30.1280.994@1280.0.1920.1080" timestamp="1596561458886" />
+    <state x="2250" y="164" width="436" height="743" key="git4idea.branch.GitSmartOperationDialog" timestamp="1596461258087">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2250" y="164" width="436" height="743" key="git4idea.branch.GitSmartOperationDialog/1280.0.1920.1080/0.30.1280.994@1280.0.1920.1080" timestamp="1596461258087" />
+    <state x="2238" y="312" width="460" height="446" key="git4idea.merge.GitMergeDialog" timestamp="1596461119182">
+      <screen x="1280" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2238" y="312" width="460" height="446" key="git4idea.merge.GitMergeDialog/1280.0.1920.1080/0.30.1280.994@1280.0.1920.1080" timestamp="1596461119182" />
+  </component>
+</project>
