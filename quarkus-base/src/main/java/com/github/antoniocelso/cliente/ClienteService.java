@@ -19,6 +19,7 @@ public class ClienteService {
         return clienteDao.listarClientes();
     }
 
+    @Transactional
     public ClienteDTO incluirCliente(ClienteDTO clienteDTO) {
 
         Cliente entity = new Cliente();

@@ -14,7 +14,7 @@ public class ClienteDTO implements Serializable {
 
     private Long cpf;
 
-    private Date dataNascimento;
+//    private Date dataNascimento;
 
 }
 

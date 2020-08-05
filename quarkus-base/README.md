@@ -1,4 +1,6 @@
-# quarkus-base project
+# Quarkus-base project
+
+### Quarkus + MySql + Swagger UI
 
 This project uses Quarkus, the Supersonic Subatomic Java Framework.
 

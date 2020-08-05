@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<dataSource name="@localhost">
+<dataSource name="quarkus-base/Hibernate">
   <database-model serializer="dbm" dbms="MYSQL" family-id="MYSQL" format-version="4.19">
     <root id="1">
       <ServerVersion>8.0.19</ServerVersion>
@@ -8,7 +8,6 @@
       <DefaultCasing>exact</DefaultCasing>
     </root>
     <schema id="2" parent="1" name="information_schema">
-      <Current>1</Current>
       <Collation>utf8_general_ci</Collation>
     </schema>
     <schema id="3" parent="1" name="mysql">
@@ -21,6 +20,7 @@
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <schema id="6" parent="1" name="teste">
+      <Current>1</Current>
       <Collation>utf8mb4_0900_ai_ci</Collation>
     </schema>
     <collation id="7" parent="1" name="armscii8_bin">
@@ -931,46 +931,50 @@ APPLICATION_PASSWORD_ADMIN,AUDIT_ADMIN,BACKUP_ADMIN,BINLOG_ADMIN,BINLOG_ENCRYPTI
       <Position>4</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="291" parent="284" name="idade">
+    <column id="291" parent="284" name="dataNascimento">
       <Position>5</Position>
+      <DataType>datetime(6)|0s</DataType>
+    </column>
+    <column id="292" parent="284" name="idade">
+      <Position>6</Position>
       <DataType>bigint|0s</DataType>
     </column>
-    <column id="292" parent="284" name="nome">
-      <Position>6</Position>
+    <column id="293" parent="284" name="nome">
+      <Position>7</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <key id="293" parent="284" name="PRIMARY">
+    <key id="294" parent="284" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="294" parent="285" name="id">
+    <column id="295" parent="285" name="id">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="295" parent="285" name="dataAtualizacao">
+    <column id="296" parent="285" name="dataAtualizacao">
       <Position>2</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="296" parent="285" name="dataCriacao">
+    <column id="297" parent="285" name="dataCriacao">
       <Position>3</Position>
       <DataType>datetime(6)|0s</DataType>
     </column>
-    <column id="297" parent="285" name="nome">
+    <column id="298" parent="285" name="nome">
       <Position>4</Position>
       <DataType>varchar(255)|0s</DataType>
     </column>
-    <column id="298" parent="285" name="valor">
+    <column id="299" parent="285" name="valor">
       <Position>5</Position>
       <DataType>decimal(19,2 digit)|0s</DataType>
     </column>
-    <key id="299" parent="285" name="PRIMARY">
+    <key id="300" parent="285" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <column id="300" parent="286" name="next_val">
+    <column id="301" parent="286" name="next_val">
       <Position>1</Position>
       <DataType>bigint|0s</DataType>
     </column>

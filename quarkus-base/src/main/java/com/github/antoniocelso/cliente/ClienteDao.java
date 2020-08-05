@@ -14,14 +14,13 @@ public class ClienteDao implements PanacheRepository<Cliente> {
     public List<Cliente> listarClientes() {
         return listAll();
     }
+
+    public void incluirCliente(Cliente entity) {
+        persist(entity);
+    }
+
 }
 
-//public class CartaoNonPersoDao implements PanacheRepository<CartaoNonPerso> {
-//
-//    public void incluirCartaoNonPerso(CartaoNonPerso entidade) {
-//        persist(entidade);
-//    }
-//
 //    public List<CartaoNonPerso> listarCartoesVinculadosFiltrados(FiltroCartaoDTO filtroCartaoDTO) {
 //        Map<String, Object> params = new HashMap<>();
 //
