@@ -46,13 +46,6 @@ public class Cliente extends PanacheEntity {
         this.cpf = cpf;
     }
 
-//    public Date getDataNascimento() {
-//        return dataNascimento;
-//    }
-
-//    public void setDataNascimento(Date dataNascimento) {
-//        this.dataNascimento = dataNascimento;
-//    }
 
     public Date getDataCriacao() {
         return dataCriacao;

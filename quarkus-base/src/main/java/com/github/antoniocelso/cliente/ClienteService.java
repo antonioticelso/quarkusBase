@@ -13,6 +13,9 @@ public class ClienteService {
     @Inject
     ClienteDao clienteDao;
 
+    @Inject
+    ClienteDTO clienteDTO;
+
     @Transactional
     public List<Cliente> listarClientes() {
 
@@ -28,47 +31,19 @@ public class ClienteService {
         return clienteDTO;
     }
 
+    @Transactional
+    public Cliente alterarClientes(ClienteDTO clienteDTO) {
+        Cliente entity = clienteDao.findById(clienteDTO.getNome());
+
+        return entity;
+    }
+
+    @Transactional
+    public Long excluirClientes(Long id) {
+        clienteDao.delete(clienteDao.findById(id));
+
+        return id;
+    }
 }
 
-//    @Transactional
-//    public List<CartaoNonPersoDTO> buscaPaginadaVinculados(FiltroCartaoDTO filtroCartaoDTO){
-//        return converter.entityListToListDTO(cartaoNonPersoDao.listarCartoesVinculadosFiltrados(filtroCartaoDTO));
-//    }
-//
-//    @Transactional
-//    public CartaoNonPersoDTO incluirCartaoNonPerso(CartaoNonPersoDTO listaDTO) throws ErroNegocialException {
-//
-//        CartaoNonPerso entidade = converter.DTOToEntity(listaDTO);
-//
-//        cartaoNonPersoDao.incluirCartaoNonPerso(entidade);
-//
-//        listaDTO.setNuCartaoNonPerso(entidade.getNuCartaoNonPerso());
-//
-//        return listaDTO;
-//    }
-//
-//    @Transactional
-//    public Long excluir(Long id) {
-//
-//        cartaoNonPersoDao.delete(cartaoNonPersoDao.findById(id));
-//
-//        return id;
-//    }
-//    @Transactional
-//    public CartaoNonPersoDTO alterar(CartaoNonPersoDTO cartaoDTO) {
-//        CartaoNonPerso entidade = cartaoNonPersoDao.findById(cartaoDTO.getNuCartaoNonPerso());
-//        if(cartaoDTO.getCdEstadoCartaoNonPerso() != null){
-//            EstadoCartaoNonPerso estado = estadoDao.findById(cartaoDTO.getCdEstadoCartaoNonPerso());
-//            entidade.setEstadoCartaoNonPerso(estado);
-//        } if (cartaoDTO.getDtValidadeCartao() != null){
-//            entidade.setDtValidadeCartao(cartaoDTO.getDtValidadeCartao() );
-//        } if (cartaoDTO.getNuContaCartaoVinculada() != null){
-//            entidade.setNuContaCartaoVinculada(cartaoDTO.getNuContaCartaoVinculada());
-//        } if (cartaoDTO.getNuSeqTitularidadePortadorVinculado() != null){
-//            entidade.setNuSeqTitularidadePortadorVinculado(cartaoDTO.getNuSeqTitularidadePortadorVinculado());
-//        } if (cartaoDTO.getNuSequencialLoteRemessa() != null){
-//            entidade.setNuSequencialLoteRemessa(cartaoDTO.getNuSequencialLoteRemessa());
-//        }
-//        return converter.entityToDTO(entidade);
-//    }
-//}
+
