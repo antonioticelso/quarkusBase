@@ -23,7 +23,7 @@ public class ClienteService {
     }
 
     @Transactional
-    public ClienteDTO incluirCliente(ClienteDTO clienteDTO) {
+    public ClienteDTO incluirCliente(com.github.antoniocelso.cliente.ClienteDTO clienteDTO) {
 
         Cliente entity = new Cliente();
         clienteDao.incluirCliente(entity);

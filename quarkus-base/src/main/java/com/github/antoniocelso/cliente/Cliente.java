@@ -1,6 +1,7 @@
 package com.github.antoniocelso.cliente;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -9,12 +10,13 @@ import java.util.Date;
 import java.util.Objects;
 
 @Entity
+@NoArgsConstructor
 public class Cliente extends PanacheEntity {
 
     private String nome;
     private Long idade;
     private Long cpf;
-//    private Date dataNascimento;
+    private Date dataNascimento;
 
     @CreationTimestamp
     private Date dataCriacao;
@@ -46,6 +48,13 @@ public class Cliente extends PanacheEntity {
         this.cpf = cpf;
     }
 
+    public Date getDataNascimento() {
+        return dataNascimento;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
 
     public Date getDataCriacao() {
         return dataCriacao;
@@ -68,18 +77,18 @@ public class Cliente extends PanacheEntity {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Cliente cliente = (Cliente) o;
-        return Objects.equals(nome, cliente.nome) &&
-                Objects.equals(idade, cliente.idade) &&
-                Objects.equals(cpf, cliente.cpf) &&
-                Objects.equals(dataCriacao, cliente.dataCriacao) &&
-                Objects.equals(dataAtualizacao, cliente.dataAtualizacao);
+        return nome.equals(cliente.nome) &&
+                idade.equals(cliente.idade) &&
+                cpf.equals(cliente.cpf) &&
+                dataNascimento.equals(cliente.dataNascimento) &&
+                dataCriacao.equals(cliente.dataCriacao) &&
+                dataAtualizacao.equals(cliente.dataAtualizacao);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(nome, idade, cpf, dataCriacao, dataAtualizacao);
+        return Objects.hash(nome, idade, cpf, dataNascimento, dataCriacao, dataAtualizacao);
     }
-
 }
 
 
