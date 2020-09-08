@@ -1,6 +1,7 @@
 package com.github.antoniocelso.cliente;
 
 import io.quarkus.hibernate.orm.panache.PanacheEntity;
+import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
@@ -11,6 +12,7 @@ import java.util.Objects;
 
 @Entity
 @NoArgsConstructor
+@AllArgsConstructor
 public class Cliente extends PanacheEntity {
 
     private String nome;
