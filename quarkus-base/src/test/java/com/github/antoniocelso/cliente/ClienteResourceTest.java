@@ -2,6 +2,7 @@ package com.github.antoniocelso.cliente;
 
 import io.quarkus.test.Mock;
 import org.junit.jupiter.api.BeforeEach;
+import org.mockito.InjectMocks;
 import org.mockito.Mockito;
 import org.mockito.MockitoAnnotations;
 
@@ -10,7 +11,7 @@ import java.util.List;
 
 public class ClienteResourceTest {
 
-    @InjectMock
+    @InjectMocks
     ClienteResource clienteResource;
 
     @Mock

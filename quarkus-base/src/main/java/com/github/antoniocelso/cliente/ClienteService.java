@@ -33,7 +33,7 @@ public class ClienteService {
 
     @Transactional
     public Cliente alterarClientes(ClienteDTO clienteDTO) {
-        Cliente entity = clienteDao.findById(clienteDTO.getNome());
+        Cliente entity = clienteDao.findById(Long.valueOf(clienteDTO.getNome()));
 
         return entity;
     }
